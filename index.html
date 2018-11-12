@@ -54,7 +54,7 @@
 		float: left;
 	}
 	ul {
-		background: #D5973C;
+		background: ##578152;
 		height: 2em;
 		width: 100%;
 	}
@@ -77,7 +77,7 @@
 		border-radius: .3em .3em 0 0;
 	}
 	.current, a:hover.current, .topmenu li:hover a.current {
-		background: #AD9B7F;
+		background: #578152;
 		color: #eee;
 		padding-top: .3em;
 		border-radius: .3em .3em 0 0;
@@ -90,7 +90,7 @@
 
 	ul.submenu {
 		float: none;
-		background: #916A31;
+		background: #256d7;
 		width: auto;
 		height: auto;
 		position: absolute;
@@ -122,7 +122,7 @@
 		border-bottom: none;
 	}
 	ul.submenu li a:hover {
-		background: #D5973C;
+		background: #578152;
 		height: 2em;
 		padding-top: .2em;
 		top: 0;
@@ -131,36 +131,34 @@
 	</style>
 </head>
 <body>
-	<h1>Creating dropdown menus</h1>
-	<p>Although dropdown menus are a bit more complicated than vertical or horizontal menus, they do use many of the same techniques. In fact, dropdown menus often combine the two techniques by having a top-level horizontal menu that features vertical dropdown menus.</p>
-	<p>To create dropdown menus, you start with a series of nested lists. Each nested list represents a dropdown menu, and should be nested inside the list item it represents. You can create multi-level dropdowns by having consecutive nested lists. Most people identify top-level and submenus by applying class attributes to the lists that identifies the menu type. The support of more advanced CSS selectors makes this unnecessary, but adding the classes helps the overall semantics of your menus and can make authoring the styles easier.</p>
-	<p>There are two real tricks to creating CSS-driven submenus. First is to hide the submenus when they&rsquo;re not needed, and then show them when a user hovers over the relevant link. To accomplish this you could set the initial display property of the submenu to none, set the initial visibility to hidden, or reposition the submenu off the page. When the appropriate link is hovered over, you simply set the display property back to block, visibility to visible, or change the positioning back to the desired location. You could even use the opacity property in a similar fashion. Of those techniques, I prefer to position the submenus, as modifying the display often results in screen readers ignoring the submenus. The second major concern is how to display an &ldquo;active&rdquo; state on the top-level link as you browse the submenus. This is accomplished by writing a selector that activates the submenus based on the user hovering over the parent list item of the submenu. We&rsquo;re tempted to try to trigger the submenu on the relevant parent link, but that would not allow us to browse the submenu once the user has moved away from the parent link.</p>
-	<h2>Dropdown menu example</h2>
+	<h1>Subnautica</h1>
+	<p> Insert Info about game</p>
+	<h2>Subnautica</h2>
 	<nav class="cf">
 		<nav class="cf">
 			<ul class="topmenu">
-				<li><a href="tech-tree.htm" title="Home page" class="current">Home</a></li>
-				<li><a href="products.htm" title="browse our products">Products</a>
+				<li><a href="tech-tree.htm" title="Home page" class="current">Subnautica</a></li>
+				<li><a href="products.htm" title="browse our products">Items</a>
 					<ul class="submenu">
-						<li><a href="laptops.htm" title="laptops">Laptops</a></li>
-						<li><a href="tablets.htm" title="tablets">Tablets</a></li>
-						<li><a href="phones.htm" title="smartphones">Smartphones</a></li>
+						<li><a href="laptops.htm" title="laptops">Materials</a></li>
+						<li><a href="tablets.htm" title="tablets">Tools</a></li>
+						<li><a href="phones.htm" title="smartphones">Recipies</a></li>
 						<li><a href="accessories.htm" title="accessories">Accessories</a></li>
 					</ul>
 				</li>
-				<li><a href="blog.htm" title="read our blog">Blog</a>
+				<li><a href="blog.htm" title="read our blog">Info and Helpful tools</a>
 					<ul class="submenu">
-						<li><a href="recent.htm" title="recent articles">Recent articles</a></li>
-						<li><a href="archive.htm" title="archives">Archives</a></li>
-						<li><a href="hall.htm" title="favorite articles">Hall of fame</a></li>
+						<li><a href="recent.htm" title="recent articles">Maps</a></li>
+						<li><a href="archive.htm" title="archives">Mods</a></li>
+						<li><a href="hall.htm" title="favorite articles">Storyline</a></li>
 					</ul>
 				</li>
-				<li><a href="about.htm" title="More about us">About</a></li>
-				<li><a href="contact.htm" title="contact us">Contact</a>
+				<li><a href="about.htm" title="More about us">Subnautica Wiki</a></li>
+				<li><a href="contact.htm" title="contact us">Subnautica Homepage</a>
 					<ul class="submenu">
-						<li><a href="service.htm" title="customer service">Customer service</a></li>
-						<li><a href="register.htm" title="register for an account">Register</a></li>
-						<li><a href="support.htm" title="technical support">Technical support</a></li>
+						<li><a href="service.htm" title="customer service">Other Sources</a></li>
+						<li><a href="register.htm" title="register for an account">Community</a></li>
+						<li><a href="support.htm" title="technical support">By Subnautica on Steam here</a></li>
 					</ul>
 				</li>
 			</ul>
